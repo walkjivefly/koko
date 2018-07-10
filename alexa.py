@@ -477,7 +477,7 @@ def alexa_stream_party_play(kodi):
 
 
 
-# Handle the SteamThis intent.
+# Handle the StreamThis intent.
 @ask.intent('StreamThis')
 @preflight_check
 def alexa_stream_this(kodi):
