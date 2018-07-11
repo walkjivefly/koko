@@ -533,6 +533,35 @@ def alexa_stream_this(kodi):
 
   return statement(response_text).simple_card(card_title, response_text)
 
+# Handle the CurrentPlayItemInquiry intent.
+@ask.intent('CurrentPlayItemInquiry')
+@preflight_check
+def alexa_current_playitem_inquiry(kodi):
+  card_title = render_template('current_playing_item').encode('utf-8')
+  log.info(card_title)
+
+  response_text = render_template('nothing_playing')
+
+  curitem = kodi.GetActivePlayItem()
+  if curitem:
+    response_text = render_template('unknown_playing')
+
+    if curitem['type'] == 'song':
+      if curitem['title']:
+        response_text = render_template('current_song_is')
+        response_text += u' '
+        response_text += curitem['title']
+        if curitem['artist']:
+          response_text += u' ' + render_template('by') + u' '
+          response_text += curitem['artist'][0]
+        if curitem['album']:
+          response_text += u', '
+          response_text += render_template('on_the_album')
+          response_text += u' '
+          response_text += curitem['album']
+
+  response_text = response_text.encode('utf-8')
+  return statement(response_text).simple_card(card_title, response_text)
 
 @ask.intent('AMAZON.PauseIntent')
 @preflight_check
