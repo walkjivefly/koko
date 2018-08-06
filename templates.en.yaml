@@ -2,247 +2,88 @@
 ##   Response Templates   ##
 ############################
 
-streaming_album_card: "Playing album"
-
 streaming_recent_songs: "Playing recent songs"
 
 config_missing: "Could not find all the connection information I need. Please check your kodi.config file"
 
-hosted_config_missing: "Could not find all the connection information I need. Please update your information on app.media-dash-center.io"
-
-not_logged_in: "Please link your account to use this skill"
-
-error_parsing_results: "Error parsing results"
+streaming: "Playing songs by {{ heard_name }}"
 
 could_not_find: "Could not find {{ heard_name }}"
 
-could_not_find_generic: "Could not find anything"
+streaming_album_artist: "Playing {{ album_name }} album by {{ artist }}"
 
-could_not_find_genre: "Could not find any {{ genre_name }} music"
+could_not_find_album_artist: "Could not find {{ album_name }} album by {{ artist }}"
 
-could_not_find_artist: "Could not find anything by {{ artist_name }}"
+streaming_album: "Playing {{ album_name }} album"
 
-could_not_find_genre_artist: "Could not find {{ genre_name }} music by {{ artist_name }}"
+could_not_find_album: "Could not find {{ album_name }} album"
 
-could_not_find_album: "Could not find the album {{ album_name }}"
+streaming_song_artist: "Playing {{ song_name }} by {{ artist }}"
 
-could_not_find_album_artist: "Could not find the album {{ album_name }} by {{ artist }}"
+could_not_find_song_artist: "Could not find {{ song_name }} by {{ artist }}"
 
-could_not_find_song: "Could not find the song {{ song_name }}"
+streaming_song: "Playing {{ song_name }}"
 
-could_not_find_song_artist: "Could not find the song {{ song_name }} by {{ artist }}"
+could_not_find_song: "Could not find {{ song_name }}"
 
-could_not_find_song_album: "Could not find the song {{ song_name }} on the album {{ album_name }}"
-
-could_not_find_multi: "Could not find {{ heard_name }} by {{ artist }}"
-
-could_not_find_playlist: "I could not find a playlist named {{ heard_name }}"
-
-no_recommendations: "I'm sorry, I have nothing to recommend"
-
-recommend_artist: "How about music by {{ artist_name }}?"
-
-recommend_album: "How about the album {{ album_name }} by {{ artist_name }}?"
-
-recommend_song: "How about the song {{ song_name }} by {{ artist_name }}?"
-
-recommend_songs_recent: "How about some of your recently added songs?"
-
-searching: "Searching for {{ heard_name }}"
-
-opening: "Opening {{ heard_name }}"
-
-playing: "Playing {{ heard_name }}"
-
-playing_genre: "Playing {{ genre_name }} music"
-
-playing_genre_artist: "Playing {{ genre_name }} music by {{ artist_name }}"
-
-playing_album: "Playing the album {{ album_name }}"
-
-playing_album_artist: "Playing album {{ album_name }} by {{ artist }}"
-
-playing_song: "Playing the song {{ song_name }}"
-
-playing_song_artist: "Playing the song {{ song_name }} by {{ artist }}"
-
-playing_song_album: "Playing the song {{ song_name }} on the album {{ album_name }}"
-
-playing_playlist_audio: "{{ action }} the audio playlist {{ playlist_name }}"
-
-playing_party: "Starting party play"
-
-playing_empty: "Playing"
-
-resuming_empty: "Resuming"
-
-shuffling: "Shuffling {{ heard_name }}"
+no_recent_songs: "There are no recent songs"
 
 shuffling_empty: "Shuffling"
 
-shuffling_playlist_audio: "Shuffling the audio playlist {{ playlist_name }}"
+action_audio_playlist: "{{ action }} audio playlist"
 
-shuffling_playlist: "Shuffling the playlist {{ playlist_name }}"
+playing_playlist_audio: "{{ action }} the audio playlist {{ playlist_name }}"
 
-shuffling_album: "Shuffling the album {{ album_name }}"
+could_not_find_playlist: "I could not find a playlist named {{ heard_name }}"
 
-shuffling_album_artist: "Shuffling the album {{ album_name }} by {{ artist }}"
+streaming_party: "Playing party mode"
 
-shuffle_on: "Shuffle mode on"
+error_parsing_results: "Error parsing results"
 
-shuffle_off: "Shuffle mode off"
+transferring_stream: "Transferring stream to Alexa"
 
-loop_one: "Loop mode one"
+nothing_currently_playing: "Kodi isn't playing any music right now"
 
-loop_all: "Loop mode all"
+help: "What would you like to do? Try something like, {{ example }}"
 
-loop_off: "Loop mode off"
+help_short: "Try something like, {{ example }}"
 
-no_albums_artist: "You have no albums by {{ artist }}"
-
-no_new_albums: "You dont have any new albums to listen to"
-
-no_recent_songs: "No recently added songs found"
-
-you_have_list: "You have {{ items }}"
-
-volume_set: "Volume set to {{ num }}"
-
-help: "You can ask me whether there are any new albums, to play a song, or artist, control playback of media, and more. For example, {{ example }}. I've sent more examples to your Alexa app."
-
-help_short: "What would you like to do?  Try something like, {{ example }}."
-
-help_text: "Kodi-Alexa allows you to fully control one or more Kodi installations with your voice.  Here are some examples of things you can say:\n
+help_text: "Koko allows you to stream music from your Kodi server. Here are some examples of things you can say:\n
 \xa0\n
 {{ examples }}
 \xa0\n
-For a complete list of supported requests, please see the README file on Github (https://github.com/m0ngr31/kodi-alexa/README.md)."
+For a complete list of supported requests, please see the README file on Github (https://github.com/m0ngr31/koko/README.md)."
 
-help_play: "Please specify the media type in your play command, such as, play the album parallel lines."
+welcome: "Welcome to Koko"
 
-are_you_sure: "Are you sure?"
-
-are_you_sure_shutdown: "Are you sure you want to shut down?"
-
-are_you_sure_reboot: "Are you sure you want to reboot?"
-
-are_you_sure_hibernate: "Are you sure you want to hibernate?"
-
-are_you_sure_suspend: "Are you sure you want to suspend?"
-
-welcome: "Welcome to Koko."
-
-nothing_currently_playing: "Kodi isn't playing any music right now."
 
 
 ############################
 ##  Card Title Templates  ##
 ############################
 
+streaming_album_card: "Playing album"
+
 card_config_missing: "Invalid configuration"
 
-current_playing_item: "Currently playing item"
+stream_artist: "Playing songs by {{ heard_artist }}"
 
-time_left_playing: "Time left on currently playing item"
+streaming_album_card: "Playing album"
 
-play_pause: "Play/Pause"
+streaming_song_card: "Playing song"
 
-stopping: "Stopping playback"
+streaming_album_or_song: "Playing album or song"
 
-step_forward: "Stepping forward"
+streaming_party_mode: "Party Mode"
 
-step_backward: "Stepping backward"
-
-big_step_forward: "Big step forward"
-
-big_step_backward: "Big step backward"
-
-listen_artist: "Playing music by {{ heard_artist }}"
-
-listen_artist_genre: "Playing {{ heard_genre }} music by {{ heard_artist }}"
-
-newly_added_albums: "Newly added albums"
-
-update_audio: "Updating audio library"
-
-clean_audio: "Cleaning audio library"
-
-quitting: "Quitting"
-
-suspending_system: "Suspending system"
-
-shutting_down: "Shutting down system"
-
-rebooting: "Rebooting system"
-
-hibernating: "Hibernating system"
-
-shuffle_disable: "Disabling shuffle"
-
-shuffle_enable: "Enabling shuffle"
-
-loop_disable: "Disabling repeat"
-
-loop_enable: "Cycling repeat mode"
-
-playing_previous: "Playing previous item"
-
-playing_next: "Playing next item"
-
-playing_same: "Starting current item over"
-
-playing_recent_songs: "Playing recently added songs"
-
-playing_album_card: "Playing album"
-
-shuffling_album_card: "Shuffling album"
-
-playing_latest_album_card: "Playing latest album by {{ heard_artist }}"
-
-shuffling_latest_album_card: "Shuffling latest album by {{ heard_artist }}"
-
-playing_song_card: "Playing song"
-
-playing_album_or_song: "Playing album or song"
-
-action_audio_playlist: "{{ action }} audio playlist"
-
-party_mode: "Party Mode"
-
-albums_by: "Albums by {{ heard_artist }}"
+streaming_current_playlist: "Playing current playlist"
 
 help_card: "Help"
-
-playback_stopped: "Playback stopped"
-
-unknown_playing: "The currently playing item is unknown"
-
-nothing_playing: "There is nothing currently playing"
-
-remaining_close: "It is nearly over"
-
-remaining_mins: "There are {{ minutes }} minutes remaining"
-
-remaining_min: "There is one minute remaining"
-
-remaining_time: ", and it will end at {{ end_time }}"
 
 
 ############################
 ##   General Templates    ##
 ############################
-
-okay: "Okay"
-
-short_confirm: " "
-
-and_more: ", and more"
-
-and_more_similar: ", and more"
-
-and: ", and "
-
-by: "by"
 
 no_more_songs: "There are no more songs in the queue"
 
@@ -250,6 +91,4 @@ no_songs_history: "There are no songs in your playlist history"
 
 no_current_song: "There is no current song"
 
-current_song_is: "The currently playing song is"
-
-on_the_album: "on the album"
+playing: "playing"

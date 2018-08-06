@@ -2,252 +2,93 @@
 ##   Response Templates   ##
 ############################
 
-streaming_album_card: "Playing album"
-
 streaming_recent_songs: "Playing recent songs"
 
-config_missing: "Verbindungsinformationen wurden nicht gefunden. Überprüfen deine Datei kodi.config bitte"
+config_missing: "Could not find all the connection information I need. Please check your kodi.config file"
 
-hosted_config_missing: "Verbindungsinformationen wurden nicht gefunden. Aktualisieren deine Informationen bitte zu app.media-center.io"
+streaming: "Playing songs by {{ heard_name }}"
 
-not_logged_in: "Verknüpfe dein Konto bitte, um diese Fertigkeit zu nutzen"
+could_not_find: "Could not find {{ heard_name }}"
 
-error_parsing_results: "Konnte das nicht verarbeiten"
+streaming_album_artist: "Playing {{ album_name }} album by {{ artist }}"
 
-could_not_find: "Konnte {{ heard_name }} nicht finden"
+could_not_find_album_artist: "Could not find {{ album_name }} album by {{ artist }}"
 
-could_not_find_generic: "Konnte diese Formulierung nicht finden"
+streaming_album: "Playing {{ album_name }} album"
 
-could_not_find_genre: "Konnte keine {{ genre_name }} Musik finden"
+could_not_find_album: "Could not find {{ album_name }} album"
 
-could_not_find_artist: "Konnte keine Musik von {{ artist_name }} finden"
+streaming_song_artist: "Playing {{ song_name }} by {{ artist }}"
 
-could_not_find_genre_artist: "Konnte keine {{ genre_name }} Musik von {{ artist_name }} finden"
+could_not_find_song_artist: "Could not find {{ song_name }} by {{ artist }}"
 
-could_not_find_album: "Konnte das Album {{ album_name }} nicht finden"
+streaming_song: "Playing {{ song_name }}"
 
-could_not_find_album_artist: "Konnte das Album {{ album_name }} von {{ artist }} nicht finden"
+could_not_find_song: "Could not find {{ song_name }}"
 
-could_not_find_song: "Konnte den Song {{ song_name }} nicht finden"
+no_recent_songs: "There are no recent songs"
 
-could_not_find_song_artist: "Konnte den Song {{ song_name }} von {{ artist }} nicht finden"
+shuffling_empty: "Shuffling"
 
-could_not_find_song_album: "Konnte den Song {{ song_name }} auf dem Album {{ album_name }} nicht finden"
+action_audio_playlist: "{{ action }} audio playlist"
 
-could_not_find_multi: "Konnte {{ heard_name }} von {{ artist }} nicht finden"
+playing_playlist_audio: "{{ action }} the audio playlist {{ playlist_name }}"
 
-could_not_find_playlist: "Konnte die Playlist {{ heard_name }} nicht finden"
+could_not_find_playlist: "I could not find a playlist named {{ heard_name }}"
 
-no_recommendations: "Es tut mir leid, aber es gibt nichts zu empfehlen."
+streaming_party: "Playing party mode"
 
-recommend_artist: "Wie wäre es mit Musik von {{ artist_name }}?"
+error_parsing_results: "Error parsing results"
 
-recommend_album: "Wie wäre es mit dem Album {{ album_name }} von {{ artist_name }}?"
+transferring_stream: "Transferring stream to Alexa"
 
-recommend_song: "Wie wäre es mit dem Song {{ song_name }} von {{ artist_name }}?"
+nothing_currently_playing: "Kodi isn't playing any music right now"
 
-recommend_songs_recent: "Wie wäre es mit ein paar kürzlich hinzugefügten Songs?"
+help: "What would you like to do? Try something like, {{ example }}"
 
-searching: "Suche nach {{ heard_name }}"
+help_short: "Try something like, {{ example }}"
 
-opening: "Öffne {{ heard_name }}"
-
-playing: "Spiele {{ heard_name }}"
-
-playing_genre: "Spiele {{ genre_name }} Musik"
-
-playing_genre_artist: "Spiele {{ genre_name }} Musik von {{ artist_name }}"
-
-playing_album: "Spiele das Album {{ album_name }}"
-
-playing_album_artist: "Spiele das Album {{ album_name }} von {{ artist }}"
-
-playing_song: "Spiele den Song {{ song_name }}"
-
-playing_song_artist: "Spiele den Song {{ song_name }} von {{ artist }}"
-
-playing_song_album: "Spiele den Song {{ song_name }} aus dem Album {{ album_name }}"
-
-playing_playlist_audio: "{{ action }} Audio Playlist {{ playlist_name }}"
-
-playing_party: "Starte Party Play"
-
-playing_empty: "Spiele"
-
-resuming_empty: "Setze fort"
-
-shuffling: "Zufallswiedergabe {{ heard_name }}"
-
-shuffling_empty: "Zufallswiedergabe"
-
-shuffling_playlist_audio: "Zufallswiedergabe der Audio Playlist {{ playlist_name }}"
-
-shuffling_playlist: "Zufallswiedergabe der Playlist {{ playlist_name }}"
-
-shuffling_album: "Zufallswiedergabe des Albums {{ album_name }}"
-
-shuffling_album_artist: "Zufallswiedergabe des Albums {{ album_name }} von {{ artist }}"
-
-shuffle_on: "Zufallswiedergabe ein"
-
-shuffle_off: "Zufallswiedergabe aus"
-
-loop_one: "Wiederhole eins"
-
-loop_all: "Wiederhole alle"
-
-loop_off: "Wiederholung aus"
-
-no_albums_artist: "Du hast kein Album von {{ artist }}"
-
-no_new_albums: "Du hast kein neues Album zum anhören"
-
-you_have_list: "Du hast {{ items }}"
-
-volume_set: "Lautstärke auf {{ num }} gestellt"
-
-help: "Du kannst mich fragen, ob es neue Serien gibt, mich bitten einen Film, eine Serie oder die Musik eines Interpreten abzuspielen oder die Wiedergabe von Medien zu steuern und vieles mehr. Zum Beispiel {{ example }}. Ich habe dir weitere Beispiele an deine Alexa App geschickt."
-
-help_short: "Was möchtest du tun? Probiere etwas wie {{ example }}."
-
-help_text: "Kodi-Alexa ermöglicht es dir eine oder mehrere Kodi Installtionen mit deiner Stimme zu steuern. Hier sind einige Beispiele, die du sagen kannst:\n
+help_text: "Koko allows you to stream music from your Kodi server. Here are some examples of things you can say:\n
 \xa0\n
-{{ example }}
+{{ examples }}
 \xa0\n
-Für eine komplette Liste der unterstützten Kommandos, lese bitte die README Datei auf Github (https://github.com/m0ngr31/kodi-alexa/README.md)."
+For a complete list of supported requests, please see the README file on Github (https://github.com/m0ngr31/koko/README.md)."
 
-help_play: "Spezifiziere bitte den Medientyp mit dem Wiedergabebefehl, so wie Spiele den Film Ghost Busters"
+welcome: "Welcome to Koko"
 
-are_you_sure: "Bist du dir sicher?"
-
-are_you_sure_shutdown: "Bist du dir sicher, dass du das System herunterfahren möchtest?"
-
-are_you_sure_reboot: "Bist du dir sicher, dass du einen Neustart durchführen möchtest?"
-
-are_you_sure_hibernate: "Bist du dir sicher, dass das System in den Hibernate gehen soll?"
-
-are_you_sure_suspend: "Bist du dir sicher, dass das System in den Suspend gehen soll?"
-
-welcome: "Willkommen zum Koko Skill"
-
-nothing_currently_playing: "Es läuft gerade nichts."
 
 
 ############################
 ##  Card Title Templates  ##
 ############################
 
-card_config_missing: "Ungültige Konfiguration"
+streaming_album_card: "Playing album"
 
-current_playing_item: "Aktuelle Wiedergabe"
+card_config_missing: "Invalid configuration"
 
-time_left_playing: "Verbleibende Zeit der aktuellen Wiedergabe"
+stream_artist: "Playing songs by {{ heard_artist }}"
 
-play_pause: "Play/Pause"
+streaming_album_card: "Playing album"
 
-stopping: "Stoppe Wiedergabe"
+streaming_song_card: "Playing song"
 
-step_forward: "einen Schritt vorwärts"
+streaming_album_or_song: "Playing album or song"
 
-step_backward: "einen Schritt zurück"
+streaming_party_mode: "Party Mode"
 
-big_step_forward: "einen großen Schritt vorwärts"
+streaming_current_playlist: "Playing current playlist"
 
-big_step_backward: "einen großen Schritt zurück"
-
-listen_artist: "Spiele Musik von {{ heard_artist }}"
-
-listen_artist_genre: "Spiele {{ heard_genre }} Musik von {{ heard_artist }}"
-
-newly_added_albums: "Neu hinzugefügte Alben"
-
-update_audio: "Aktualisiere Audio Bibliothek"
-
-clean_audio: "Säubere Audio Bibliothek"
-
-suspending_system: "Schalte das System in den Bereitschaftsmodus"
-
-quitting: "Beenden"
-
-shutting_down: "Schalte das System aus"
-
-rebooting: "Starte das System neu"
-
-hibernating: "Schalte das System in den Ruhezustand"
-
-shuffle_disable: "Zufallswiedergabe ausschalten"
-
-shuffle_enable: "Zufallswiedergabe einschalten"
-
-loop_disable: "Wiederholung ausschalten"
-
-loop_enable: "Wiederholung einschalten"
-
-playing_previous: "Spiele vorherigen Titel"
-
-playing_next: "Spiele nächsten Titel"
-
-playing_same: "Starte aktuellen Titel erneut"
-
-playing_recent_songs: "Spiele kürzlich hinzugefügte Songs"
-
-playing_album_card: "Spiele Album"
-
-shuffling_album_card: "Zufälliges Album"
-
-playing_latest_album_card: "Spiele zuletzt hinzugefügtes Album von {{ heard_artist }}"
-
-shuffling_latest_album_card: "Zufallswiedergabe des zuletzt hinzugefügten Albums von {{ heard_artist }}"
-
-playing_song_card: "Spiele Song"
-
-playing_album_or_song: "Spiele Album oder Song"
-
-action_audio_playlist: "{{ action }} Audio Playlist"
-
-party_mode: "Party Mode"
-
-albums_by: "Alben von {{ heard_artist }}"
-
-help_card: "Hilfe"
-
-playback_stopped: "Wiedergabe gestoppt"
-
-unknown_playing: "Der Titel der aktuellen Wiedergabe ist unbekannt"
-
-nothing_playing: "Im Augenblick findet keine Wiedergabe statt"
-
-remaining_close: "Die Wiedergabe ist fast vorbei"
-
-remaining_mins: "Es sind noch {{ minutes }} Minuten übrig"
-
-remaining_min: "Es ist noch eine Minute übrig"
-
-remaining_time: ", und die Wiedergabe wird um {{ end_time }} enden"
+help_card: "Help"
 
 
 ############################
 ##   General Templates    ##
 ############################
 
-okay: "Okay"
+no_more_songs: "There are no more songs in the queue"
 
-short_confirm: " "
+no_songs_history: "There are no songs in your playlist history"
 
-and_more: ", und mehr"
+no_current_song: "There is no current song"
 
-and_more_similar: ", und weitere"
-
-and: ", und "
-
-by: "von"
-
-no_more_songs: "Es gibt keine weiteren Songs in der Warteschlange"
-
-no_songs_history: "Es gibt keine Songs in der Playlist Historie"
-
-no_current_song: "Es gibt keinen aktuellen Song"
-
-current_song_is: "Der Titel des aktuell laufenden Lieds lautet"
-
-on_the_album: "auf dem Album"
+playing: "playing"
